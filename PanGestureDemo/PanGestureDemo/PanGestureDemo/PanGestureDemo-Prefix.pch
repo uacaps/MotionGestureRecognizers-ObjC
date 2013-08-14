@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PanGestureDemo' target in the 'PanGestureDemo' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11971DE317B2BE5B00147099 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11971DE217B2BE5B00147099 /* Cocoa.framework */; };
+		11971DED17B2BE5B00147099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11971DEB17B2BE5B00147099 /* InfoPlist.strings */; };
+		11971DEF17B2BE5B00147099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971DEE17B2BE5B00147099 /* main.m */; };
+		11971DF317B2BE5B00147099 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 11971DF117B2BE5B00147099 /* Credits.rtf */; };
+		11971DF617B2BE5B00147099 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971DF517B2BE5B00147099 /* AppDelegate.m */; };
+		11971DF917B2BE5B00147099 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11971DF717B2BE5B00147099 /* MainMenu.xib */; };
+		11971E1F17B2BEBF00147099 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11971E1717B2BEBF00147099 /* LeapObjectiveC.mm */; };
+		11971E2017B2BEBF00147099 /* LeapCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E1C17B2BEBF00147099 /* LeapCore.m */; };
+		11971E2117B2BEBF00147099 /* MotionSubscriberCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E1E17B2BEBF00147099 /* MotionSubscriberCenter.m */; };
+		11971E2317B2BED600147099 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11971E2217B2BED600147099 /* libLeap.dylib */; };
+		11971E2517B2C28300147099 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11971E2217B2BED600147099 /* libLeap.dylib */; };
+		11971E5617B2EEBE00147099 /* MotionGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E4717B2EEBD00147099 /* MotionGestureRecognizer.m */; };
+		11971E5717B2EEBE00147099 /* MotionPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E4917B2EEBD00147099 /* MotionPanGestureRecognizer.m */; };
+		11971E5817B2EEBE00147099 /* MotionSwipeGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E4B17B2EEBD00147099 /* MotionSwipeGestureRecognizer.m */; };
+		11971E5917B2EEBE00147099 /* MotionRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E4D17B2EEBD00147099 /* MotionRotationGestureRecognizer.m */; };
+		11971E5A17B2EEBE00147099 /* MotionPinchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E4F17B2EEBE00147099 /* MotionPinchGestureRecognizer.m */; };
+		11971E5B17B2EEBE00147099 /* MotionTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E5117B2EEBE00147099 /* MotionTapGestureRecognizer.m */; };
+		11971E5C17B2EEBE00147099 /* MotionSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E5317B2EEBE00147099 /* MotionSubscriber.m */; };
+		11971E5D17B2EEBE00147099 /* MotionAverages.m in Sources */ = {isa = PBXBuildFile; fileRef = 11971E5517B2EEBE00147099 /* MotionAverages.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11971E2417B2C27700147099 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				11971E2517B2C28300147099 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11971DDF17B2BE5B00147099 /* MotionGestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionGestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11971DE217B2BE5B00147099 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		11971DE517B2BE5B00147099 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		11971DE617B2BE5B00147099 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		11971DE717B2BE5B00147099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11971DEA17B2BE5B00147099 /* MotionGestureDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotionGestureDemo-Info.plist"; sourceTree = "<group>"; };
+		11971DEC17B2BE5B00147099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11971DEE17B2BE5B00147099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11971DF017B2BE5B00147099 /* MotionGestureDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotionGestureDemo-Prefix.pch"; sourceTree = "<group>"; };
+		11971DF217B2BE5B00147099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		11971DF417B2BE5B00147099 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11971DF517B2BE5B00147099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11971DF817B2BE5B00147099 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		11971E1717B2BEBF00147099 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		11971E1817B2BEBF00147099 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		11971E1917B2BEBF00147099 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		11971E1A17B2BEBF00147099 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		11971E1B17B2BEBF00147099 /* LeapCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapCore.h; sourceTree = "<group>"; };
+		11971E1C17B2BEBF00147099 /* LeapCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeapCore.m; sourceTree = "<group>"; };
+		11971E1D17B2BEBF00147099 /* MotionSubscriberCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionSubscriberCenter.h; sourceTree = "<group>"; };
+		11971E1E17B2BEBF00147099 /* MotionSubscriberCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionSubscriberCenter.m; sourceTree = "<group>"; };
+		11971E2217B2BED600147099 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		11971E4517B2EEBD00147099 /* MotionGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionGestures.h; sourceTree = "<group>"; };
+		11971E4617B2EEBD00147099 /* MotionGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E4717B2EEBD00147099 /* MotionGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E4817B2EEBD00147099 /* MotionPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionPanGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E4917B2EEBD00147099 /* MotionPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionPanGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E4A17B2EEBD00147099 /* MotionSwipeGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionSwipeGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E4B17B2EEBD00147099 /* MotionSwipeGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionSwipeGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E4C17B2EEBD00147099 /* MotionRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E4D17B2EEBD00147099 /* MotionRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E4E17B2EEBD00147099 /* MotionPinchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionPinchGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E4F17B2EEBE00147099 /* MotionPinchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionPinchGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E5017B2EEBE00147099 /* MotionTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionTapGestureRecognizer.h; sourceTree = "<group>"; };
+		11971E5117B2EEBE00147099 /* MotionTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionTapGestureRecognizer.m; sourceTree = "<group>"; };
+		11971E5217B2EEBE00147099 /* MotionSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionSubscriber.h; sourceTree = "<group>"; };
+		11971E5317B2EEBE00147099 /* MotionSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionSubscriber.m; sourceTree = "<group>"; };
+		11971E5417B2EEBE00147099 /* MotionAverages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionAverages.h; sourceTree = "<group>"; };
+		11971E5517B2EEBE00147099 /* MotionAverages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionAverages.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11971DDC17B2BE5B00147099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11971DE317B2BE5B00147099 /* Cocoa.framework in Frameworks */,
+				11971E2317B2BED600147099 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11971DD617B2BE5B00147099 = {
+			isa = PBXGroup;
+			children = (
+				11971DE817B2BE5B00147099 /* MotionGestureDemo */,
+				11971DE117B2BE5B00147099 /* Frameworks */,
+				11971DE017B2BE5B00147099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11971DE017B2BE5B00147099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11971DDF17B2BE5B00147099 /* MotionGestureDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11971DE117B2BE5B00147099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11971E2217B2BED600147099 /* libLeap.dylib */,
+				11971DE217B2BE5B00147099 /* Cocoa.framework */,
+				11971DE417B2BE5B00147099 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11971DE417B2BE5B00147099 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11971DE517B2BE5B00147099 /* AppKit.framework */,
+				11971DE617B2BE5B00147099 /* CoreData.framework */,
+				11971DE717B2BE5B00147099 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		11971DE817B2BE5B00147099 /* MotionGestureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				11971DFF17B2BE7A00147099 /* Motion Gestures */,
+				11971DF417B2BE5B00147099 /* AppDelegate.h */,
+				11971DF517B2BE5B00147099 /* AppDelegate.m */,
+				11971DF717B2BE5B00147099 /* MainMenu.xib */,
+				11971DE917B2BE5B00147099 /* Supporting Files */,
+			);
+			path = MotionGestureDemo;
+			sourceTree = "<group>";
+		};
+		11971DE917B2BE5B00147099 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11971DEA17B2BE5B00147099 /* MotionGestureDemo-Info.plist */,
+				11971DEB17B2BE5B00147099 /* InfoPlist.strings */,
+				11971DEE17B2BE5B00147099 /* main.m */,
+				11971DF017B2BE5B00147099 /* MotionGestureDemo-Prefix.pch */,
+				11971DF117B2BE5B00147099 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11971DFF17B2BE7A00147099 /* Motion Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				11971E4517B2EEBD00147099 /* MotionGestures.h */,
+				11971E4617B2EEBD00147099 /* MotionGestureRecognizer.h */,
+				11971E4717B2EEBD00147099 /* MotionGestureRecognizer.m */,
+				11971E4817B2EEBD00147099 /* MotionPanGestureRecognizer.h */,
+				11971E4917B2EEBD00147099 /* MotionPanGestureRecognizer.m */,
+				11971E4A17B2EEBD00147099 /* MotionSwipeGestureRecognizer.h */,
+				11971E4B17B2EEBD00147099 /* MotionSwipeGestureRecognizer.m */,
+				11971E4C17B2EEBD00147099 /* MotionRotationGestureRecognizer.h */,
+				11971E4D17B2EEBD00147099 /* MotionRotationGestureRecognizer.m */,
+				11971E4E17B2EEBD00147099 /* MotionPinchGestureRecognizer.h */,
+				11971E4F17B2EEBE00147099 /* MotionPinchGestureRecognizer.m */,
+				11971E5017B2EEBE00147099 /* MotionTapGestureRecognizer.h */,
+				11971E5117B2EEBE00147099 /* MotionTapGestureRecognizer.m */,
+				11971E5217B2EEBE00147099 /* MotionSubscriber.h */,
+				11971E5317B2EEBE00147099 /* MotionSubscriber.m */,
+				11971E5417B2EEBE00147099 /* MotionAverages.h */,
+				11971E5517B2EEBE00147099 /* MotionAverages.m */,
+				11971E1D17B2BEBF00147099 /* MotionSubscriberCenter.h */,
+				11971E1E17B2BEBF00147099 /* MotionSubscriberCenter.m */,
+				11971E1617B2BEAA00147099 /* Leap Core */,
+			);
+			name = "Motion Gestures";
+			sourceTree = "<group>";
+		};
+		11971E1617B2BEAA00147099 /* Leap Core */ = {
+			isa = PBXGroup;
+			children = (
+				11971E1B17B2BEBF00147099 /* LeapCore.h */,
+				11971E1C17B2BEBF00147099 /* LeapCore.m */,
+				11971E1717B2BEBF00147099 /* LeapObjectiveC.mm */,
+				11971E1817B2BEBF00147099 /* LeapObjectiveC.h */,
+				11971E1917B2BEBF00147099 /* LeapMath.h */,
+				11971E1A17B2BEBF00147099 /* Leap.h */,
+			);
+			name = "Leap Core";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11971DDE17B2BE5B00147099 /* MotionGestureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11971DFC17B2BE5B00147099 /* Build configuration list for PBXNativeTarget "MotionGestureDemo" */;
+			buildPhases = (
+				11971DDB17B2BE5B00147099 /* Sources */,
+				11971DDC17B2BE5B00147099 /* Frameworks */,
+				11971DDD17B2BE5B00147099 /* Resources */,
+				11971E2417B2C27700147099 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionGestureDemo;
+			productName = MotionGestureDemo;
+			productReference = 11971DDF17B2BE5B00147099 /* MotionGestureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11971DD717B2BE5B00147099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Matthew York";
+			};
+			buildConfigurationList = 11971DDA17B2BE5B00147099 /* Build configuration list for PBXProject "MotionGestureDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11971DD617B2BE5B00147099;
+			productRefGroup = 11971DE017B2BE5B00147099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11971DDE17B2BE5B00147099 /* MotionGestureDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11971DDD17B2BE5B00147099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11971DED17B2BE5B00147099 /* InfoPlist.strings in Resources */,
+				11971DF317B2BE5B00147099 /* Credits.rtf in Resources */,
+				11971DF917B2BE5B00147099 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11971DDB17B2BE5B00147099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11971DEF17B2BE5B00147099 /* main.m in Sources */,
+				11971DF617B2BE5B00147099 /* AppDelegate.m in Sources */,
+				11971E1F17B2BEBF00147099 /* LeapObjectiveC.mm in Sources */,
+				11971E2017B2BEBF00147099 /* LeapCore.m in Sources */,
+				11971E2117B2BEBF00147099 /* MotionSubscriberCenter.m in Sources */,
+				11971E5617B2EEBE00147099 /* MotionGestureRecognizer.m in Sources */,
+				11971E5717B2EEBE00147099 /* MotionPanGestureRecognizer.m in Sources */,
+				11971E5817B2EEBE00147099 /* MotionSwipeGestureRecognizer.m in Sources */,
+				11971E5917B2EEBE00147099 /* MotionRotationGestureRecognizer.m in Sources */,
+				11971E5A17B2EEBE00147099 /* MotionPinchGestureRecognizer.m in Sources */,
+				11971E5B17B2EEBE00147099 /* MotionTapGestureRecognizer.m in Sources */,
+				11971E5C17B2EEBE00147099 /* MotionSubscriber.m in Sources */,
+				11971E5D17B2EEBE00147099 /* MotionAverages.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11971DEB17B2BE5B00147099 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11971DEC17B2BE5B00147099 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		11971DF117B2BE5B00147099 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11971DF217B2BE5B00147099 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		11971DF717B2BE5B00147099 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11971DF817B2BE5B00147099 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11971DFA17B2BE5B00147099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		11971DFB17B2BE5B00147099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		11971DFD17B2BE5B00147099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionGestureDemo/MotionGestureDemo-Prefix.pch";
+				INFOPLIST_FILE = "MotionGestureDemo/MotionGestureDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		11971DFE17B2BE5B00147099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionGestureDemo/MotionGestureDemo-Prefix.pch";
+				INFOPLIST_FILE = "MotionGestureDemo/MotionGestureDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11971DDA17B2BE5B00147099 /* Build configuration list for PBXProject "MotionGestureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11971DFA17B2BE5B00147099 /* Debug */,
+				11971DFB17B2BE5B00147099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11971DFC17B2BE5B00147099 /* Build configuration list for PBXNativeTarget "MotionGestureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11971DFD17B2BE5B00147099 /* Debug */,
+				11971DFE17B2BE5B00147099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11971DD717B2BE5B00147099 /* Project object */;
+}
