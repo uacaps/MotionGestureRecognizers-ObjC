@@ -36,6 +36,7 @@
         //Set callback stuff
         callbackTarget = target;
         callbackSelector = sel;
+        self.possibleDirections = MotionPinchGestureRecognizerDirectionIn | MotionPinchGestureRecognizerDirectionOut;
         return self;
     }
     

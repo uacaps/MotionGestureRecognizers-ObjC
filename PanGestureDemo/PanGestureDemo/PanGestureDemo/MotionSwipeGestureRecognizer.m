@@ -40,6 +40,7 @@
         callbackTarget = target;
         callbackSelector = sel;
         self.minimumSwipeThreshold = 0.8;
+        self.possibleDirections = MotionSwipeGestureRecognizerDirectionDown | MotionSwipeGestureRecognizerDirectionUp | MotionSwipeGestureRecognizerDirectionLeft | MotionSwipeGestureRecognizerDirectionRight | MotionSwipeGestureRecognizerDirectionIn | MotionSwipeGestureRecognizerDirectionOut;
         return self;
     }
     

@@ -37,6 +37,7 @@
         callbackTarget = target;
         callbackSelector = sel;
         self.minimumNumberOfFingersRequired = 3;
+        self.possibleDirections = MotionRotationGestureRecognizerDirectionCounterClockwise | MotionRotationGestureRecognizerDirectionClockwise;
         return self;
     }
     

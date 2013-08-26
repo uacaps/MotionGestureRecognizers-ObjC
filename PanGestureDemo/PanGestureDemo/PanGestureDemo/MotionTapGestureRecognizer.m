@@ -39,7 +39,7 @@ static const float MotionTapDownBeginZEndThreshold = -80;
         //Set callback stuff
         callbackTarget = target;
         callbackSelector = sel;
-        
+        self.possibleDirections = MotionTapGestureRecognizerDirectionDown | MotionTapGestureRecognizerDirectionUp;
         return self;
     }
     
